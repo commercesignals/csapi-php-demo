@@ -1,0 +1,3 @@
+[submodule "csapi-php"]
+	path = csapi-php
+	url = git@github.com:commercesignals/csapi-php.git
