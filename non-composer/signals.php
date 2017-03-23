@@ -24,8 +24,15 @@ $requests = $api->signals($signalId)
 
 $requestId = '0a00017c-5aac-1195-815a-ae99350700b9';
 
-// Get the results from a signal request
+// Get the results from a signal request (raw results from the data source)
 $results = $api->signals($signalId)
               ->requests($requestId)
               ->results()
               ->get();
+
+
+// Get the results and include the summary details (data shown on dashboard results)
+$results = $api->signals($signalId)
+              ->requests($requestId)
+              ->results()
+              ->get(['summarize' => true]);
