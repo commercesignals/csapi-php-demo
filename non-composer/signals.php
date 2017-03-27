@@ -44,3 +44,9 @@ $merchants = $api->signals($signalId)
               ->get();
 
 
+// Get a specific merchant for a signal
+$merchantId = '0a000367-564f-144e-8632-4f349c5a00c9';
+
+$merchants = $api->signals($signalId)
+              ->merchants($merchantId)
+              ->get();
