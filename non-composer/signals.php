@@ -36,3 +36,11 @@ $results = $api->signals($signalId)
               ->requests($requestId)
               ->results()
               ->get(['summarize' => true]);
+
+
+// Get the merchants that are approved for a given signal
+$merchants = $api->signals($signalId)
+              ->merchants()
+              ->get();
+
+
