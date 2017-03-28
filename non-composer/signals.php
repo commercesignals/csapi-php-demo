@@ -13,18 +13,23 @@ $api = new CommerceSignals\API(API_BASE, [
   'cert' => $cert
 ]);
 
-$signalId = '0a000367-564f-144e-8156-4f3a97e707a1';
+// Get a list of all available signals
+$signals = $api->signals()
+              ->get();
+
 
 // Get a list of all signal requests
+$signalId = '0a000367-564f-144e-8156-4f3a97e707a1';
+
 $requests = $api->signals($signalId)
               ->requests()
               ->get();
 
 
 
+// Get the results from a signal request (raw results from the data source)
 $requestId = '0a00017c-5aac-1195-815a-ae99350700b9';
 
-// Get the results from a signal request (raw results from the data source)
 $results = $api->signals($signalId)
               ->requests($requestId)
               ->results()
