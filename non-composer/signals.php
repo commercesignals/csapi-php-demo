@@ -43,7 +43,8 @@ $results = $api->signals($signalId)
               ->get(['summarize' => true]);
 
 
-// Get the merchants that are approved for a given signal
+// Get the merchants that are available for a given signal.  The isAuthorized flag will
+// be set to 1 for merchants that have been approved to be used with a given signal
 $merchants = $api->signals($signalId)
               ->merchants()
               ->get();
