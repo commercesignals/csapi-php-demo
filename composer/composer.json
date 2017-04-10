@@ -1,0 +1,12 @@
+{
+    "name": "commercesignals/csapi-php-demo",
+    "authors": [
+        {
+            "name": "Parker Vaughn",
+            "email": "parker@commercesignals.com"
+        }
+    ],
+    "require": {
+        "commercesignals/csapi-php": "dev-master"
+    }
+}
