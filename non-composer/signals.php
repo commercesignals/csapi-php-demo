@@ -4,7 +4,7 @@ const CERT_FILE_NAME = 'my-api-key-private-cert.pem';
 const API_KEY = '0a00017c-5aa7-1b40-815a-aa75d5f8001b';
 const API_BASE = 'https://api.commercesignals.com/';
 
-require_once(__DIR__ . '/../csapi-php/src/CommerceSignals/API.php');
+require_once(__DIR__ . './csapi-php/src/CommerceSignals/API.php');
 
 $cert = file_get_contents(__DIR__ . '/' . CERT_FILE_NAME);
 
